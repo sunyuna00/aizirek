@@ -1,0 +1,33 @@
+.wrapper-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .ant-input-group-wrapper {
+    max-width: 220px;
+    min-width: 120px;
+
+    .ant-input,
+    .ant-btn {
+      height: 40px;
+    }
+
+    .ant-input::placeholder {
+      color: #2424248a;
+    }
+
+    &.count {
+      max-width: 160px;
+    }
+  }
+
+  .ant-btn {
+    height: 40px;
+
+    &:disabled {
+      color: #2424248a;
+      border-color: #24242440;
+    }
+  }
+}

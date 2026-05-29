@@ -1,0 +1,28 @@
+.wrapper-table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .action {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: fixed;
+    z-index: 1000;
+    right: -168px;
+    top: 333px;
+    transform: rotate(-90deg);
+
+    .ant-btn {
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px 6px 0 0;
+    }
+  }
+
+  .ant-table-tbody {
+    .ant-table-row {
+      cursor: pointer;
+    }
+  }
+}
