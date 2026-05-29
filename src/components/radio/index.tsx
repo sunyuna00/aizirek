@@ -2,10 +2,21 @@ import type { RadioGroupProps } from 'antd';
 import { Radio } from 'antd';
 import './style.scss'
 
+const RadioGroup = ({
+  value,
+  options,
+  onChange
+}: RadioGroupProps) => {
 
-const RadioGroup = ({ value, options, onChange }: RadioGroupProps) => {
-
-  return (<Radio.Group options={options} onChange={onChange} value={value} optionType="button" />)
+  return (
+    <Radio.Group
+      className='custom-radio-group'
+      options={options}
+      onChange={onChange}
+      value={value}
+      optionType="button"
+    />
+  )
 }
 
-export default RadioGroup 
+export default RadioGroup
